@@ -40,6 +40,8 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1
 2. 启动本地 HTTP 代理。
 3. 填写代理主机和端口，点击“启动 ChatGPT”。
 
+在 GitHub Release 中可以直接下载 `ChatGPTProxyLauncher.exe`；ZIP 版本额外包含 README、许可证和桌面快捷方式脚本。
+
 如需桌面快捷方式，请在解压目录中右键 `Create-Desktop-Shortcut.ps1`，选择“使用 PowerShell 运行”。快捷方式会自动使用应用图标。
 
 > 如果本地软件提供的是 SOCKS 端口，请改用其 HTTP/mixed 端口；本工具当前传递的是 HTTP 代理 URL。
