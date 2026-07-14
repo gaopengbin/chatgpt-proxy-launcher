@@ -1,18 +1,18 @@
 # ChatGPT Proxy Launcher
 
+## 你是不是遇到了这些问题？
+
+- **Codex 一直 `Reconnecting... 1/5` 到 `5/5`**，要等很久才开始回复。
+- **不开全局代理，ChatGPT/Codex Desktop 就无法稳定连接**；但又不想让所有 Windows 程序都走代理。
+- **手机无法连接 Windows 上的桌面 Codex 会话**，一直找不到桌面端或停在等待连接。
+
+**ChatGPT Proxy Launcher 就是为这三个问题做的。** 它只给本次启动的 ChatGPT/Codex 及其子进程设置代理，不修改 Windows 全局代理。已在 Windows 上实测，通过这种方式启动后，手机可以连接此前无法连接的桌面 Codex 会话。
+
 <p align="center">
   <img src="assets/app-icon.png" width="128" height="128" alt="ChatGPT Proxy Launcher icon">
 </p>
 
 一个轻量的 Windows 小工具：检查本地 HTTP 代理，并在仅影响当前应用的环境变量中启动 ChatGPT/Codex Desktop。单文件不到 100 KB，无需管理员权限。
-
-## 为什么需要它
-
-ChatGPT/Codex Desktop 在 Windows 上不一定会自动使用代理软件提供的本地 HTTP 代理。本工具通过代理环境启动桌面客户端，因此：
-
-- **无需开启全局代理**：只让本次启动的 ChatGPT/Codex 及其子进程走代理，不影响浏览器和其他程序。
-- **减少 Codex 反复重连**：当重连由桌面客户端无法稳定访问服务引起时，为它提供明确的代理出口可以改善连接稳定性。
-- **解决手机无法连接桌面 Codex**：已在 Windows 上实测，通过本工具启动后，手机可以连接此前无法连接的桌面 Codex 会话。其原因是远程控制相关进程继承了可用的代理出口。
 
 > 上述手机连接结论针对“桌面端缺少可用代理出口”这一故障场景。如果故障来自账号不一致、局域网、防火墙、TLS 检查或服务端状态，则仍需单独排查。
 
