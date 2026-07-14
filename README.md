@@ -23,6 +23,7 @@ A tiny Windows utility that checks a local HTTP proxy and launches ChatGPT/Codex
 - Automatically discovers the `OpenAI.Codex` or `OpenAI.ChatGPT-Desktop` Microsoft Store/MSIX package
 - Starts the current `ChatGPT.exe` entry point and remains compatible with the older `Codex.exe`
 - Checks the proxy port and detects an already-running ChatGPT instance before launch
+- Switches the complete application interface between English and Simplified Chinese
 - Sets uppercase and lowercase forms of `HTTP_PROXY`, `HTTPS_PROXY`, and `NO_PROXY`
 - Does not modify the Windows system proxy and does not require administrator privileges
 
