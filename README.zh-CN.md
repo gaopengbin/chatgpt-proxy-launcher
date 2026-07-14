@@ -23,6 +23,7 @@
 - 自动发现 Microsoft Store/MSIX 安装的 `OpenAI.Codex` 或 `OpenAI.ChatGPT-Desktop` 包
 - 优先启动当前的 `ChatGPT.exe`，兼容旧版 `Codex.exe`
 - 启动前检查代理端口以及已经运行的 ChatGPT 实例
+- 应用界面支持 English / 简体中文完整切换
 - 同时设置大小写形式的 `HTTP_PROXY`、`HTTPS_PROXY` 和 `NO_PROXY`
 - 不修改 Windows 系统代理，不需要管理员权限
 
