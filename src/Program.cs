@@ -32,6 +32,7 @@ namespace ChatGPTProxyLauncherLite
         public LauncherForm()
         {
             Text = "ChatGPT Proxy Launcher";
+            Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             StartPosition = FormStartPosition.CenterScreen;
             ClientSize = new Size(480, 372);
             MinimumSize = new Size(496, 411);
