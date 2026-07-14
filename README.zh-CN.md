@@ -2,6 +2,13 @@
 
 <p align="center"><a href="README.md">English</a> | <strong>简体中文</strong></p>
 
+<p align="center">
+  <a href="https://github.com/gaopengbin/chatgpt-proxy-launcher/releases/latest"><img src="https://img.shields.io/github/v/release/gaopengbin/chatgpt-proxy-launcher" alt="最新版本"></a>
+  <a href="https://github.com/gaopengbin/chatgpt-proxy-launcher/releases"><img src="https://img.shields.io/github/downloads/gaopengbin/chatgpt-proxy-launcher/total" alt="累计下载"></a>
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4" alt="Windows 10 和 11">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/gaopengbin/chatgpt-proxy-launcher" alt="MIT 许可证"></a>
+</p>
+
 ## 你是不是遇到了这些问题？
 
 - **Codex 一直 `Reconnecting... 1/5` 到 `5/5`**，要等很久才开始回复。
@@ -17,6 +24,15 @@
 一个轻量的 Windows 小工具：检查本地 HTTP 代理，并在仅影响当前应用的环境变量中启动 ChatGPT/Codex Desktop。单文件不到 100 KB，无需管理员权限。
 
 > 上述手机连接结论针对“桌面端缺少可用代理出口”这一故障场景。如果故障来自账号不一致、局域网、防火墙、TLS 检查或服务端状态，则仍需单独排查。
+
+## 相关官方问题
+
+本工具针对的症状也出现在 `openai/codex` 官方仓库中：
+
+- [Windows WebSocket 不使用系统代理，但设置 `HTTP_PROXY` / `HTTPS_PROXY` 后正常](https://github.com/openai/codex/issues/29958)
+- [Windows 手机远程控制需要代理环境变量](https://github.com/openai/codex/issues/29233)
+- [WebSocket 失败后经历完整的 `Reconnecting... 1/5–5/5` 才回退 HTTP](https://github.com/openai/codex/issues/19821)
+- [Windows Codex 使用 SOCKS5 不稳定，改为显式 HTTP 代理后恢复](https://github.com/openai/codex/issues/20844)
 
 ## 特性
 
