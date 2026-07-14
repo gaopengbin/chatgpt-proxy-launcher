@@ -2,6 +2,13 @@
 
 <p align="center"><strong>English</strong> | <a href="README.zh-CN.md">简体中文</a></p>
 
+<p align="center">
+  <a href="https://github.com/gaopengbin/chatgpt-proxy-launcher/releases/latest"><img src="https://img.shields.io/github/v/release/gaopengbin/chatgpt-proxy-launcher" alt="Latest release"></a>
+  <a href="https://github.com/gaopengbin/chatgpt-proxy-launcher/releases"><img src="https://img.shields.io/github/downloads/gaopengbin/chatgpt-proxy-launcher/total" alt="Total downloads"></a>
+  <img src="https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4" alt="Windows 10 and 11">
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/gaopengbin/chatgpt-proxy-launcher" alt="MIT license"></a>
+</p>
+
 ## Are you experiencing any of these problems?
 
 - **Codex repeatedly shows `Reconnecting... 1/5` through `5/5`**, making every response slow to start.
@@ -17,6 +24,15 @@
 A tiny Windows utility that checks a local HTTP proxy and launches ChatGPT/Codex Desktop with process-scoped proxy environment variables. The executable is under 100 KB and does not require administrator privileges.
 
 > The verified mobile connection result applies when the desktop remote-control process lacks a usable proxy route. Account mismatch, LAN restrictions, firewalls, TLS inspection, and service-side incidents require separate diagnosis.
+
+## Related upstream reports
+
+The launcher targets symptoms also reported in the official `openai/codex` repository:
+
+- [Windows WebSocket transport ignores the system proxy but works with `HTTP_PROXY` / `HTTPS_PROXY`](https://github.com/openai/codex/issues/29958)
+- [Windows mobile remote control requires proxy environment variables](https://github.com/openai/codex/issues/29233)
+- [WebSocket failures exhaust all `Reconnecting... 1/5–5/5` retries before HTTP fallback](https://github.com/openai/codex/issues/19821)
+- [Windows Codex is unstable with SOCKS5 but recovers with an explicit HTTP proxy](https://github.com/openai/codex/issues/20844)
 
 ## Features
 
